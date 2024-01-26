@@ -35,6 +35,3 @@ The value of '1/3' according to python is an infinite decimal of .3333~. It's si
 ### Why is the value of `.33333 + .33333 + .33333 == 1` equal to `False`?
 
 If you use `.33333 + .33333 + .33333 == 1` the computer assumes that .33333 ends- therefore does not equal 1. In real life we are aware that much like pi- it isnt feasible for us to use the percise number. However, the computer can make infinate numbers.
-
-
-(Did you remember to add your name?!)
