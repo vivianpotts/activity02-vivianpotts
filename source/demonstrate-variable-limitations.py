@@ -12,6 +12,6 @@ print()
 # NOTE: Uncomment this line and run it!
 # NOTE: Make sure that this line is commented-out when run in GitHub Actions
 
-# less_feasible_number = 2**2**100
-# print(f"The value of a less feasible number is {less_feasible_number}")
-# print()
+less_feasible_number = 2**2**100
+print(f"The value of a less feasible number is {less_feasible_number}")
+print()
