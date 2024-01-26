@@ -1,0 +1,54 @@
+# perform checks on a file
+- source/demonstrate-variable-limitations.py:
+    - description: Ensure that the demonstrate-variable-limitations.py file exists in the source/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in the demonstrate-variable-limitations.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+- source/compare-variables.py:
+    - description: Ensure that compare-variables.py file exists in the source/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in the demonstrate-variable-limitations.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+
+# check the technical writing for various characteristics
+- writing/reflection.md:
+    - description: Ensure that reflection.md file exists in the writing/ directory
+      check: ConfirmFileExists
+    - description: Write a minimum number of meaningful words in the reflection
+      check: CountFileWords
+      options:
+        count: 150
+        exact: false
+    - description: Confirm that the markdown file has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 8
+        exact: true
+    - description: Confirm that the markdown file has the correct number of code blocks
+      check: CountMarkdownTags
+      options:
+        tag: code_block
+        count: 2
+        exact: true
+    - description: Complete all TODOs, remove the TODO markers in the reflection.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the reflection file
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
